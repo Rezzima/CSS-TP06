@@ -1,19 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TP06</title>
+    <style>
+        h1 {
+            animation: cambioColor 8s infinite linear;
+        }
+
+        @keyframes cambioColor {
+            0% {
+                color: #f8b195;
+            }
+
+            25% {
+                color: #f67280;
+            }
+
+            50% {
+                color: #c06c84;
+            }
+
+            75% {
+                color: #6c5b7b;
+            }
+
+            100% {
+                color: #355c7d;
+            }
+        }
+    </style>
 </head>
+
 <body>
     <header>
         <h1>TP06 CSS</h1>
     </header>
     <main>
+        <h3>¿Qué significa CSS?</h3>
+        <P>Significa "cascading style sheet"</P>
+
+        <h3>¿Para qué sirve el CSS? ¿Qué programa se utiliza para interpretar el CSS?</h3>
+        <p>Sirve para personalizar una pagina web, y se necesita un navegador web para interpretar su codigo</p>
+
+        <h3>¿A qué se llama regla de CSS?</h3>
+        <p>la regla del css es un "selector" que se encarga de definir a que instancia se aplican los estilos, una
+            "<em>propiedad</em>" que es lo que permite dar un estilo <br> un valor de propiedad y estas dos ultimas
+            cosas hacen la declaracion </p>
+
+        <h3>¿Cuál es la anatomía de la regla de CSS? Agregar imagen explicativa y utilizando una lista descriptiva
+            explicar sus elementos.</h3>
+        <image
+            src="http://web.xn--ensead-zwa.com.ar/assets/static/csspartes.3d2bee5.aa01c55ea5fd8ecd1ae1116d536b4e85.png"
+            alt="imagen sobre css"></image>
+        <dl>
+            <dt>
+                <strong>Selector</strong>
+            </dt>
+            <dd>selecciona el(los) elemento(s) a dar estilo (en este caso, los elementos "p" ). Para dar estilo a un
+                elemento diferente, solo cambia el selector.</dd>
+            <dt>
+                <strong>Declaracion</strong>
+            </dt>
+            <dd>aplica las propiedades que querés dar al elemento seleccionado en el Selector. En este caso hay una sola
+                regla, pero puede haber más.</dd>
+            <dt>
+                <strong>Propiedades</strong>
+            </dt>
+            <dd>es lo que te permite dar un estilo a un elemento HTML. En el ejemplo la propiedad es color que le dará
+                color a las letras de los párrafos. Siempre las propiedades se ubicarán a la izquierda.</dd>
+            <dt>
+                <strong>Valor de propiedad</strong>
+            </dt>
+            <dd> las propiedades deben tener un valor. Cada propiedad tiene valores definidos. Cada valor se ubicará a
+                la derecha.</dd>
+        </dl>
+
+        <h3>¿Qué es un selector en CSS?</h3>
+        <p>Es la primer parte de una regla css, es basicamente lo que le indica al navegador que cosa se esta
+            modificando</p>
+
+        <h3>Identificar y definir los selectores: de ID, de clases, universal, de etiquetas, descendente.</h3>
+        <p>Los selectores de id son "#", los de clases, son ".", los de etiquetas son la etiqueta sin nada adelante, el
+            universal es "*", y el descendente es "reverse"</p>
 
     </main>
     <footer>
         <p>Bruno Godoy</p>
     </footer>
 </body>
+
 </html>
