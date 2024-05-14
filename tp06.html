@@ -7,7 +7,8 @@
     <title>TP06</title>
     <style>
         h1 {
-            animation: cambioColor 8s infinite linear;
+            animation: cambioColor 8s infinite linear, levitar 2s ease-in-out infinite;
+            text-align: center;
         }
 
         @keyframes cambioColor {
@@ -30,6 +31,24 @@
             100% {
                 color: #355c7d;
             }
+        }
+        @keyframes levitar {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(10px);
+            }
+        }
+        table {
+            background-color: white;
+            border: 1px solid black;
+        }
+        th {
+            border: 3px solid black;
+        }
+        td {
+            border: 2px solid lightskyblue;
         }
     </style>
 </head>
@@ -59,7 +78,7 @@
             <dt>
                 <strong>Selector</strong>
             </dt>
-            <dd>selecciona el(los) elemento(s) a dar estilo (en este caso, los elementos "p" ). Para dar estilo a un
+            <dd>selecciona el(los) elemento(s) a dar estilo. Para dar estilo a un
                 elemento diferente, solo cambia el selector.</dd>
             <dt>
                 <strong>Declaracion</strong>
@@ -86,10 +105,94 @@
         <p>Los selectores de id son "#", los de clases, son ".", los de etiquetas son la etiqueta sin nada adelante, el
             universal es "*", y el descendente es "reverse"</p>
 
+        <h3>Explicar brevemente utilizando una lista ordenada: ¿cómo funciona el CSS?</h3>
+        <ol>
+            <li>El navegador carga el HTML</li>
+            <li>Despues convierte el HTML en un DOM (modelo de objetos del documento)</li>
+            <li>Entonces el navegador busca todos los elementos vinculados al HTML como los videos incrustados o las
+                imagenes ademas del CSS vinculado</li>
+            <li>El navegador analiza el CSS y ordena en diferentes cubos las diferentes reglas segun el tipo de
+                selector</li>
+            <li>El arbol de renderizacion muestra la estructura en que los nodos deberian aparecer despues de aplicar las reglas</li>
+            <li>En la pantalla se muestra el aspecto visual de la pagina (esta etapa se llama pintura)</li>
+        </ol>
+
+        <h3>¿Cuáles son las tres formas para vincular CSS con HTML?</h3>
+        <p>Se puede ingresar la etiqueta "style" en el HEAD del archivo, tambien existe el atributo "style", o con un "link" </p>
+
+        <h3>Ingrese al sitio CSS Zen Garden http://www.csszengarden.com y analicemos el código HTML</h3>
+        <p><a href="https://csszengarden.com/219/">Primero</a></p>
+        <p><a href="https://csszengarden.com/221/">Segundo</a></p>
+        <p>Si, un mismo html puede crear diferentes diseños porque lo que importa es el css</p>
+
+    <table>
+        <tr>    
+            <th>Propiedad</th>
+            <th>|Descripcion</th>
+            <th>|Valores posibles</th>
+        </tr>
+        <tr>
+            <td>color</td>
+            <td>define el color del texto</td>
+            <td>|valor posible "#355c7d"</td>   
+        </tr>
+        <tr>
+            <td>background-color</td>        
+            <td>Define el color de fondo de un elemento</td>
+            <td>|valor posible "#6c5b7b"</td>
+        </tr>
+        <tr>
+            <td>font-size</td>
+            <td>Define el tamaño de la fuente del texto.</td>
+            <td>|valor posible "xx-small"</td>
+        </tr>
+        <tr>
+            <td>font-weight</td>    
+            <td>Define el grosor de la fuente del texto</td>
+            <td>|valor posible "100"</td>
+        </tr>
+        <tr>
+            <td>font-style</td>
+            <td>define el estilo de la fuente</td>
+            <td>valor posible "italic"</td>
+        </tr>
+        <tr>
+            <td>font-family</td>
+            <td>define el tipo de letra</td>
+            <td>valores posibles "nombre de familia"</td>
+        </tr>    
+        <tr>
+            <td>text-align</td>
+            <td>define la alineacion</td>
+            <td>valores posibles "center"</td>
+        </tr>
+        <tr>
+            <td>text-decoration</td>
+            <td>define la decoracion</td>
+            <td>valor posble "none"</td>
+        </tr>
+        <tr>
+            <td>text-transform</td>
+            <td>define la transformacion</td>
+            <td>valor posible "none"</td>
+        </tr>
+        <tr>
+            <td>letter-spacing</td>
+            <td>define el espacio entre lineas</td>
+            <td>valor posible "normal"</td>
+        </tr>
+        <tr>
+            <td>line-height</td>
+            <td>define la altura</td>
+            <td>valor posible "1.2"</td>
+        </tr>
+
+        
+    </table>
     </main>
     <footer>
         <p>Bruno Godoy</p>
     </footer>
-</body>
 
+</body>
 </html>
