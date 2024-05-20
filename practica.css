@@ -3,11 +3,6 @@ body {
     background-color: #000000;  
     font-size: 16px;
     }
-h1 {  
-        font-size: 36px;  
-        color: #ffffff;
-        text-align: center;    
-    }
 h2 {
     color:  rgba(255, 255, 255, 0.685);
     animation: levitar 2s ease-in-out infinite;
@@ -16,3 +11,26 @@ h2 {
      0%, 100% {transform: translate(0);}
      50% {transform: translateY(10px);}
 }            
+.encabezado {
+    text-align: center;  
+    text-transform: uppercase;  
+    font-weight: bold;  
+    font-size: 42px;
+    color: antiquewhite;
+}
+.parra {
+    color: #4e4747;
+    text-align: justify;  
+    text-transform: capitalize;  
+    font-size: 24px;
+}
+#fondo {
+    background-color: #000000;
+}
+p a {
+    color:aqua; 
+    text-decoration: none;
+}
+p {
+    color: #4e4747;
+}
