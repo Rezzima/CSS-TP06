@@ -1,0 +1,96 @@
+/* modifica el body */
+body {
+    background-color: #000;
+    color: aliceblue;
+}
+/* modifica los puntos de interes */
+nav ul {
+    list-style: none;
+    margin: 0%;
+    padding: 0%;
+    text-align: center;
+}
+nav ul li {
+    display: inline-block;
+    border: 1px solid #000;
+    margin: 0.5em;
+    padding: 10px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+/* modifica los iconos y nombre del footer */
+footer ul {
+    margin: 0px;
+    list-style: none;
+}
+footer ul li {
+    display: inline-block;
+}
+.iconos {
+    padding: 0;
+}
+footer {
+    text-align: center;
+}
+.icono {
+    width: 30px;
+    margin: 10px;
+}
+/* le da forma a los contenedores */
+.container {
+    display: flex;
+    flex-direction: row;
+}
+.imagen {
+    margin: 10px;
+}
+main {
+    padding: 20px;
+}
+section {
+    color: black;
+    background-color: gray;
+    border: 30px solid #000;
+    margin: 3px 2px;
+    text-align: left;
+}
+main section h2 {
+    margin-left: 10px;
+}
+/* modifica el titulo */
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    animation: levitar 2s ease-in-out infinite;
+}
+@keyframes levitar {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+}
+@keyframes giro {
+    from  {  
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+/* modifica todos los parrafos */
+p {
+    color: antiquewhite;
+}
+.vinilos {
+    display: flex;
+    justify-content: space-around; 
+}
+.vinilo {
+    width: 120px;
+    animation: giro 2s linear infinite;
+}
